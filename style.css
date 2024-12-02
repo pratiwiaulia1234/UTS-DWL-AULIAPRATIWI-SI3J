@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(149, 149, 197);
+    display: grid;
+    grid-template-areas: 
+    "header header header header header header header header header header header header"
+    "nav nav nav nav nav nav main main main main main main"
+    "nav nav nav nav nav nav aside section1 section1 section1 section2 section2"
+    "nav nav nav nav nav nav footer footer footer footer footer footer";
+    grid-gap: 1rem;
+}
+
+header {
+    color: rgb(53, 53, 121);
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(149, 149, 197);
+    padding: 10px;
+}
+
+header input{
+    width: 250px;
+    height: 25px;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgb(53, 53, 121);
+    flex-direction: column;
+    text-align: start;
+    gap: 20px;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    padding-top: 30px;
+    padding: 35px;
+    font-size: large;
+}
+nav a:hover{
+    color: rgb(248, 12, 4)
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(53, 53, 121);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    color: white;
+}
+
+.welcome p{
+    padding-top: 10px;
+}
+
+main img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: solid 2px white;
+}
+
+main h1{
+    color: white;
+}
+
+aside {
+    grid-area: aside;
+    background-color: white;
+    height: 580px;
+    width: 650px;
+} 
+
+aside img{
+    width: 500px;
+}
+
+.section1, .section2 {
+    grid-area: section1;
+    background-color: rgb(208, 208, 216);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    font-size: large;
+}
+
+.Matakuliah {
+    border-radius: 15px;
+}
+
+.Matakuliah, .Aktivitas{
+    background-color: white;
+    padding: 40px;
+    font-size: large;
+}
+
+.section2 {
+    grid-area: section2;
+    background-color: rgb(208, 208, 216);
+    padding: 15px;
+}
+
+.Aktivitas {
+    border-radius: 15px;
+}
+
+.Lampiran {
+    display: flex;
+    border-radius: 20px;
+    background-color: white;
+    padding: 15px;
+    font-size: large;
+    gap: 15px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(208, 208, 216);
+    padding: 15px;
+}
